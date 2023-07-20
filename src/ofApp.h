@@ -30,5 +30,6 @@ class ofApp : public ofBaseApp{
 		ofMesh mesh2;
 		ofEasyCam cam;
 		ofPolyline line;
-
+		ofMaterial lineMaterial;
+		ofMaterial meshMaterial;
 };
