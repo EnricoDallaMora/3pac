@@ -120,7 +120,7 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\..\addons\ofxAssimpModelLoader\libs;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\Win32;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\license;..\..\..\..\addons\ofxAssimpModelLoader\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);\..\;;src;..\..\..\..\addons\ofxAssimpModelLoader\libs;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\Compiler;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\port\AndroidJNI;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\Win32;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\lib\vs\x64;..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\license;..\..\..\..\addons\ofxAssimpModelLoader\src; C:\Users\enric\Desktop\OpenFrameworks\of_v0.11.2_vs2017_release\apps\myApps\EnriconeCreation\Test2</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -180,14 +180,17 @@
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Branch.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp" />
     <ClCompile Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp" />
     <ClCompile Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
     <ClCompile Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp" />
+    <ClCompile Include="Trunk.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Branch.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h" />
     <ClInclude Include="..\..\..\..\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
@@ -235,6 +238,7 @@
     <ClInclude Include="..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\vector2.h" />
     <ClInclude Include="..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\vector3.h" />
     <ClInclude Include="..\..\..\..\addons\ofxAssimpModelLoader\libs\assimp\include\assimp\version.h" />
+    <ClInclude Include="Trunk.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

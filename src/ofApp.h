@@ -2,6 +2,9 @@
 
 #include "ofMain.h"
 #include "ofxAssimpModelLoader.h"
+#include "Trunk.h"
+#include "Branch.h"
+
 
 class ofApp : public ofBaseApp{
 
@@ -25,11 +28,12 @@ class ofApp : public ofBaseApp{
 
 		ofxAssimpModelLoader model;
 		ofLight	light;
-		ofMesh mesh;
-		ofMesh mesh1;
-		ofMesh mesh2;
+		//ofMesh mesh;
+		//ofMesh mesh1;
+		//ofMesh mesh2;
 		ofEasyCam cam;
 		ofPolyline line;
 		ofMaterial lineMaterial;
 		ofMaterial meshMaterial;
+
 };
